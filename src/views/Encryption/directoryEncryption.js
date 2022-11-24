@@ -144,15 +144,17 @@ const Posts = () => {
                       <ListItem
                         key={index}
                         secondaryAction={
-                          returnDirectoryList != null ? (
-                            returnDirectoryList[index] != undefined ? (
-                              returnDirectoryList[index].success == true ? (
-                                <CheckCircleIcon color="success" />
-                              ) : (
-                                <ErrorIcon color="disabled" />
+                          returnDirectoryList != null
+                            ? returnDirectoryList.map((lists, i) =>
+                                lists.index == index ? (
+                                  lists.success == true ? (
+                                    <CheckCircleIcon key={i} color="success" />
+                                  ) : (
+                                    <ErrorIcon key={i} color="disabled" />
+                                  )
+                                ) : null
                               )
-                            ) : null
-                          ) : null
+                            : null
                         }
                         disablePadding
                       >
