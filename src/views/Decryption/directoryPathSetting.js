@@ -1,13 +1,17 @@
 import React from "react";
 import { Grid, Box, TextField, Button } from "@material-ui/core";
 
-const PathSetting = ({ pathSettinngHandleClick, directoryPath, inputRef }) => {
+const DirectoryPathSetting = ({
+  dePathSettinngHandleClick,
+  decryptionDirectoryPathRef,
+  deDirectoryPath,
+}) => {
   return (
     <Grid
       container
       spacing={3}
       style={{
-        background: "#75C9FF",
+        background: "#D7E9EF",
         marginBottom: "20px",
       }}
     >
@@ -21,14 +25,14 @@ const PathSetting = ({ pathSettinngHandleClick, directoryPath, inputRef }) => {
               type="text"
               inputProps={{
                 style: {
-                  color: "white",
+                  color: "black",
                   textAlign: "center",
                   fontSize: "20px",
                   fontWeight: "bold",
                 },
               }} // font size of input text
-              inputRef={inputRef}
-              placeholder="복호화된 파일을 저장할 경로 [output Directory]"
+              inputRef={decryptionDirectoryPathRef}
+              placeholder="복호화할 파일이 있는 경로 [input Directory]"
             ></TextField>
           </Grid>
           <Grid item xs={4}>
@@ -36,7 +40,7 @@ const PathSetting = ({ pathSettinngHandleClick, directoryPath, inputRef }) => {
               size="small"
               variant="contained"
               type="submit"
-              onClick={pathSettinngHandleClick}
+              onClick={dePathSettinngHandleClick}
               style={{
                 marginLeft: "20px",
                 background: "#6799FF",
@@ -51,8 +55,8 @@ const PathSetting = ({ pathSettinngHandleClick, directoryPath, inputRef }) => {
       <Grid container>
         <Grid item xs={4}></Grid>
         <Grid item xs={4} align="center">
-          <Box style={{ color: "white", fontWeight: "bold", fontSize: "20px" }}>
-            현재경로 : {directoryPath}
+          <Box style={{ color: "black", fontWeight: "bold", fontSize: "20px" }}>
+            현재경로 : {deDirectoryPath}
           </Box>
         </Grid>
         <Grid item xs={4}></Grid>
@@ -61,4 +65,4 @@ const PathSetting = ({ pathSettinngHandleClick, directoryPath, inputRef }) => {
   );
 };
 
-export default PathSetting;
+export default DirectoryPathSetting;

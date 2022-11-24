@@ -11,6 +11,7 @@ import LockResetIcon from "@mui/icons-material/LockReset";
 import KeyIcon from "@mui/icons-material/Key";
 import TaskAltIcon from "@mui/icons-material/TaskAlt";
 import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
+import CreateNewFolderIcon from '@mui/icons-material/CreateNewFolder';
 export const mainNavigation = [
   {
     name: "장비연결 상태",
@@ -55,6 +56,11 @@ export const mainNavigation = [
         url: `/encryption/fileCryption`,
       },
       {
+        name: "폴더 암호화",
+        icon: CreateNewFolderIcon,
+        url: `/encryption/directoryCryption`,
+      },
+      {
         name: "문자열 암호화",
         icon: TextFormatIcon,
         url: `/encryption/stringCryption`,
@@ -75,6 +81,11 @@ export const mainNavigation = [
         name: "문자열 복호화",
         icon: TextFormatIcon,
         url: `/decryption/stringDecryption`,
+      },
+      {
+        name: "폴더 복호화",
+        icon: CreateNewFolderIcon,
+        url: `/decryption/directoryCryption`,
       },
     ],
   },

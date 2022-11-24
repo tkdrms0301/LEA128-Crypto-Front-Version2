@@ -28,7 +28,7 @@ const PathSetting = ({ pathSettinngHandleClick, directoryPath, inputRef }) => {
                 },
               }} // font size of input text
               inputRef={inputRef}
-              placeholder="암호화된 파일을 저장할 경로"
+              placeholder="암호화된 파일을 저장할 경로 [output Directory]"
             ></TextField>
           </Grid>
           <Grid item xs={4}>

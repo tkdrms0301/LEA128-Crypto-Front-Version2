@@ -62,6 +62,7 @@ const Posts = () => {
   };
 
   const handleChange = (files) => {
+    console.log(files);
     setFileData(files[0]);
   };
 

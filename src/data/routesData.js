@@ -52,6 +52,10 @@ export const mainRoutes = [
         component: lazy(() => importView("Encryption", "fileEncryption")),
       },
       {
+        path: `/encryption/directoryCryption`,
+        component: lazy(() => importView("Encryption", "directoryEncryption")),
+      },
+      {
         path: `/encryption/stringCryption`,
         component: lazy(() => importView("Encryption", "stringEncryption")),
       },
@@ -64,6 +68,11 @@ export const mainRoutes = [
       {
         path: `/decryption/fileDecryption`,
         component: lazy(() => importView("Decryption", "fileDecryption")),
+      },
+
+      {
+        path: `/decryption/directoryCryption`,
+        component: lazy(() => importView("Decryption", "directoryDecryption")),
       },
       {
         path: `/decryption/stringDecryption`,
