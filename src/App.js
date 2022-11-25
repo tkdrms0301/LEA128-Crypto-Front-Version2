@@ -1,7 +1,7 @@
 import React from "react";
 import { createMuiTheme } from "@material-ui/core";
 import { ThemeProvider } from "@material-ui/styles";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import { MainLayout } from "./layouts";
 import { themeL, themeD } from "./themes";
 import { mainNavigation, mainRoutes } from "./data";
@@ -29,7 +29,7 @@ const App = () => {
 
   const appliedTheme = createMuiTheme(darkMode ? themeD : themeL);
   return (
-    <BrowserRouter>
+    <HashRouter>
       <ThemeProvider theme={appliedTheme}>
         <RoutesWithLayout
           layout={MainLayout}
@@ -40,7 +40,7 @@ const App = () => {
           }}
         />
       </ThemeProvider>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 

@@ -41,7 +41,7 @@ const Posts = () => {
     if (isDecryption) {
       console.log(deDirectoryList);
       setIsDecryption((isDecryption) => false);
-
+      
       api
         .post("decrypt-multiple-file/run", {
           data: deDirectoryList,
