@@ -17,7 +17,7 @@ import ListItemText from "@mui/material/ListItemText";
 import Checkbox from "@mui/material/Checkbox";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import ErrorIcon from "@mui/icons-material/Error";
-import { maxWidth } from "@mui/system";
+import Progressbar from "./progressbar";
 
 const Posts = () => {
   const inputRef = useRef(null);
@@ -30,6 +30,8 @@ const Posts = () => {
   const [returnDirectoryList, setReturnDirectoryList] = useState();
 
   const [checked, setChecked] = useState([]);
+
+  const [open, setOpen] = useState(false);
 
   useEffect(() => {
     api.get("encrypt-file/path", {}).then((res) => {
@@ -50,8 +52,12 @@ const Posts = () => {
           //res.data 데이터 설정
           setReturnDirectoryList((returnDirectoryList) => res.data.body.data);
           console.log(res.data.body.data);
+
+          setOpen((prev) => !prev);
         })
-        .catch((err) => {});
+        .catch((err) => {
+          setOpen((prev) => !prev);
+        });
     }
   }, [isEncryption]);
 
@@ -79,6 +85,7 @@ const Posts = () => {
       .catch((err) => console.log(err));
   };
   const handleClickEncryption = (e) => {
+    setOpen((prev) => !prev);
     setEnDirectoryList([]);
     setIsEncryption((isEncryption) => true);
     for (let i = 0; i < checked.length; i++) {
@@ -196,6 +203,7 @@ const Posts = () => {
             >
               암호화 실행
             </Button>
+            {open && <Progressbar open={open} />}
           </Grid>
         </Grid>
       </PageBody>
