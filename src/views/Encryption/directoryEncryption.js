@@ -1,10 +1,7 @@
 import React, { useEffect } from "react";
-import { Box, Grid, Button, TextField, Typography } from "@material-ui/core";
+import { Box, Grid, Button } from "@material-ui/core";
 import { PageBody, PageHeader } from "../../components";
 import { useState, useRef } from "react";
-import { DropzoneArea } from "material-ui-dropzone";
-import Alert from "@mui/material/Alert";
-import { makeStyles } from "@material-ui/core/styles";
 import api from "../../url/baseUrl";
 import PathSetting from "./filePathSetting";
 import DirectoryPathSetting from "./directoryPathSetting";
@@ -132,7 +129,7 @@ const Posts = () => {
           encryptionDirectoryPathRef={encryptionDirectoryPathRef}
           enDirectoryPath={enDirectoryPath}
         ></DirectoryPathSetting>
-        <Grid container spacing={3} justify="center">
+        <Grid container spacing={3} justifyContent="center">
           <Grid item xs={2}></Grid>
           <Grid item xs={8} align="center">
             <Box style={{ backgroundColor: "#177FF0", maxWidth: "700px" }}>

@@ -237,7 +237,7 @@ const DBSetting = () => {
     <React.Fragment>
       <PageHeader title="환경설정 - DB 관리" />
       <PageBody>
-        <Grid container justify="center" alignItems="center">
+        <Grid container justifyContent="center" alignItems="center">
           <div
             style={{
               width: "100%",

@@ -129,7 +129,7 @@ const Posts = () => {
           decryptionDirectoryPathRef={decryptionDirectoryPathRef}
           deDirectoryPath={deDirectoryPath}
         ></DirectoryPathSetting>
-        <Grid container spacing={3} justify="center">
+        <Grid container spacing={3} justifyContent="center">
           <Grid item xs={2}></Grid>
           <Grid item xs={8} align="center">
             <Box style={{ backgroundColor: "#177FF0", maxWidth: "700px" }}>

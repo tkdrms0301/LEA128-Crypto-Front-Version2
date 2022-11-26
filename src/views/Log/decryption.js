@@ -39,7 +39,6 @@ const Decryption = () => {
   }, []);
 
   const pathSettinngHandleClick = (e) => {
-
     api
       .put("log/path", {
         logPath: inputRef.current.value,
@@ -52,7 +51,6 @@ const Decryption = () => {
         });
       })
       .catch((err) => console.log(err));
-
   };
 
   const contentRequest = (e) => {
@@ -88,7 +86,7 @@ const Decryption = () => {
     <React.Fragment>
       <PageHeader title="로그 복호화" />
       <PageBody>
-        <Grid container spacing={3} justify="center" alignItems="center">
+        <Grid container spacing={3} justifyContent="center" alignItems="center">
           <Grid item xs={6}>
             <LogSearch
               year={year}

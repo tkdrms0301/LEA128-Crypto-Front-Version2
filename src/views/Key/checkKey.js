@@ -57,7 +57,7 @@ const CheckKey = () => {
       <PageHeader title="키 확인" />
       <PageBody>
         {keyInfo != null ? (
-          <Grid container spacing={2} justify="center">
+          <Grid container spacing={2} justifyContent="center">
             {keyInfo.map((keys, index) => (
               <Grid item xs={11} key={index}>
                 <Card

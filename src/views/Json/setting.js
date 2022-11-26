@@ -118,7 +118,7 @@ const JsonApi = () => {
     <React.Fragment>
       <PageHeader title="환경설정 - API 관리" />
       <PageBody>
-        <Grid container justify="center" alignItems="center">
+        <Grid container justifyContent="center" alignItems="center">
           <div>
             <Grid
               item
@@ -227,7 +227,7 @@ const JsonApi = () => {
                 </Grid>
               </Grid>
             </Grid>
-            <Grid container spacing={3} justify="center">
+            <Grid container spacing={3} justifyContent="center">
               <Grid item xs={8}>
                 <TableContainer component={Paper}>
                   <Table>
