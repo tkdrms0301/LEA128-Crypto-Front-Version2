@@ -8,7 +8,7 @@ const pathSettingDemo = ({
   inputRef,
 }) => {
   return (
-    <Grid container justify="center">
+    <Grid container justifyContent="center">
       <div
         style={{
           border: "2px solid #6799FF",

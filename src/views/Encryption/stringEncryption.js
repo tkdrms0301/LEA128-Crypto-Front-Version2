@@ -30,7 +30,7 @@ const StringEncryption = () => {
             height: "50px",
           }}
         ></div>
-        <Grid container spacing={3} justify="center">
+        <Grid container spacing={3} justifyContent="center">
           <Grid item xs={6}>
             <div
               style={{

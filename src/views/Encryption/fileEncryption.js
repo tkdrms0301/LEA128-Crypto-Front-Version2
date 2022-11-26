@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Box, Grid, Button, TextField, Typography } from "@material-ui/core";
+import { Grid, Button, Typography } from "@material-ui/core";
 import { PageBody, PageHeader } from "../../components";
 import { useState, useRef } from "react";
 import { DropzoneArea } from "material-ui-dropzone";
@@ -107,7 +107,7 @@ const Posts = () => {
           setDirectoryPath={setDirectoryPath}
           directoryPath={directoryPath}
         ></PathSetting>
-        <Grid container spacing={3} justify="center">
+        <Grid container spacing={3} justifyContent="center">
           <Grid item xs={6}>
             <div
               style={{

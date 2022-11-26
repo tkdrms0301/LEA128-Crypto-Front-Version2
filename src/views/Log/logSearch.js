@@ -12,7 +12,7 @@ const LogSearch = ({
   contentRequest,
 }) => {
   return (
-    <Grid container spacing={2} justify="center" alignItems="center">
+    <Grid container spacing={2} justifyContent="center" alignItems="center">
       <Grid item>
         <div
           style={{
