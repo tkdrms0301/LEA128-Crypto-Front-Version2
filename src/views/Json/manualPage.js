@@ -4,6 +4,7 @@ const ManualPage = ({ contentPage }) => {
     <Grid container>
       {contentPage.map((content, index) => (
         <Grid
+          item
           xs={12}
           key={index}
           style={{

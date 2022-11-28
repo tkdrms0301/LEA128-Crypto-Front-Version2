@@ -135,7 +135,7 @@ const JsonApi = () => {
             </Grid>
             <Grid
               container
-              justify="center"
+              justifyContent="center"
               style={{
                 margin: "auto",
                 marginTop: "20px",

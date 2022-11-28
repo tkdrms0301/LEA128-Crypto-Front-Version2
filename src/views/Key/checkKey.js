@@ -120,7 +120,7 @@ const CheckKey = () => {
                         >
                           <Grid
                             item
-                            xs={2.5}
+                            xs={2}
                             style={{
                               marginLeft: "20px",
                               borderTop: "1px solid white",
@@ -154,7 +154,7 @@ const CheckKey = () => {
 
                           <Grid
                             item
-                            xs={2.5}
+                            xs={2}
                             style={{ border: "1px solid white" }}
                           >
                             <Grid item>
@@ -183,7 +183,7 @@ const CheckKey = () => {
 
                           <Grid
                             item
-                            xs={1.5}
+                            xs={2}
                             style={{
                               borderTop: "1px solid white",
                               borderRight: "1px solid white",
@@ -193,6 +193,7 @@ const CheckKey = () => {
                             <Grid item>
                               <Typography
                                 style={{
+                                  textAlign: "center",
                                   fontWeight: "bold",
                                   fontSize: "1.2vw",
                                 }}

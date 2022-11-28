@@ -64,7 +64,7 @@ const StringDecryption = () => {
                     multiline
                     variant="standard"
                     inputRef={inputRef}
-                    rows={4}
+                    minRows={4}
                     style={{
                       background: "white",
                       border: "1px solid gray",
@@ -130,7 +130,7 @@ const StringDecryption = () => {
                     display="flex"
                     type="text"
                     multiline
-                    rows={3}
+                    minRows={3}
                     value={decryptionString}
                     style={{
                       background: "white",

@@ -66,7 +66,7 @@ const Posts = () => {
     setFileData(files[0]);
   };
 
-  const MAX_SIZE = 5368709120;
+  const MAX_SIZE = 1610612736;
 
   const useStyles = makeStyles(() => ({
     dropZone: {
@@ -140,23 +140,9 @@ const Posts = () => {
                     acceptedFiles={[
                       "image/*",
                       "video/*",
-                      ".pptx",
-                      ".txt",
-                      ".hwp",
-                      ".doc",
-                      ".docx",
-                      ".jpg",
-                      ".jpeg",
-                      ".png",
-                      ".avi",
-                      ".mp4",
-                      ".gif",
-                      ".xlsx",
-                      ".zip",
-                      ".ppt",
-                      ".csv",
-                      ".pdf",
-                      "",
+                      "audio/*",
+                      "application/*,",
+                      "text/*",
                     ]}
                     showFileNames
                     dropzoneText="Upload file Drag or Click"

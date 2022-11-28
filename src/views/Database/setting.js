@@ -593,14 +593,14 @@ const DBSetting = () => {
           </Grid>
           <Grid
             container
-            justify="center"
+            justifyContent="center"
             style={{
               margin: "auto",
               marginTop: "20px",
               marginBottom: "100px",
             }}
           ></Grid>
-          <Grid container spacing={3} justify="center">
+          <Grid container spacing={3} justifyContent="center">
             <Grid item xs={8}>
               <TableContainer component={Paper}>
                 <Table>

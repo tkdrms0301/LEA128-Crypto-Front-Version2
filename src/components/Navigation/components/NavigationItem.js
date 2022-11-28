@@ -113,9 +113,9 @@ const NavigationItem = ({ item, collapsed }) => {
           </ListItemText>
           {nested &&
             (open ? (
-              <ExpandLess fontSize={collapsed ? "inherit" : "default"} />
-            ) : (
-              <ExpandMore fontSize={collapsed ? "inherit" : "default"} />
+              <ExpandLess fontSize={collapsed ? "inherit" : "medium"} />
+            ) : ( 
+              <ExpandMore fontSize={collapsed ? "inherit" : "medium"} />
             ))}
         </Box>
       </ListItem>

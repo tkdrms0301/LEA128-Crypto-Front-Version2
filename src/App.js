@@ -1,5 +1,5 @@
 import React from "react";
-import { createMuiTheme } from "@material-ui/core";
+import { createTheme } from "@material-ui/core";
 import { ThemeProvider } from "@material-ui/styles";
 import { HashRouter } from "react-router-dom";
 import { MainLayout } from "./layouts";
@@ -27,7 +27,7 @@ const App = () => {
     handler: darkModeToggle,
   };
 
-  const appliedTheme = createMuiTheme(darkMode ? themeD : themeL);
+  const appliedTheme = createTheme(darkMode ? themeD : themeL);
   return (
     <HashRouter>
       <ThemeProvider theme={appliedTheme}>
